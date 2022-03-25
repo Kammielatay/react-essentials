@@ -1,0 +1,13 @@
+db
+use lesson db
+use lessondb
+db.places.find().pretty()
+db.[COLLECTION_NAME].update()
+db.lessondb.update()
+db.places.update({"country": "Morocco"}, {$set: {"continent": "Antarctica"}})
+db.places.update({"country": "Morocco"}, {$set: {"continent": "Antarctica"}}, {multi: true})
+node server
+db.User.drop();
+db.User.drop()
+db.Userdb.drop()
+app.use(bodyParser.urlencoded({ extended: false }));
